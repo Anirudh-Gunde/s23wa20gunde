@@ -3,12 +3,12 @@ var router = express.Router();
 var sum=0;
 var more=0;
 
-/* GET users listing. */
+/* GET users listing. Anirudh Gunde(S560220)*/
 router.get('/', function(req, res, next) {
   more+=1;
   sum=sum+more;
   res.send('Sum is: '+sum);
-  
+
 });
 
 module.exports = router;
